@@ -1,0 +1,6 @@
+<mat-nav-list>
+    <a mat-list-item *ngFor="let c of cities; let i = index;" [routerLink]="['weather', c.city]">
+        <img src="{{images[i].imageUrl}}" height="50px" width="50px">
+        {{c.city}} - {{c.countryName}}
+    </a>
+</mat-nav-list>
